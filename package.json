@@ -1,7 +1,7 @@
 {
   "name": "sm-backend",
   "version": "1.0.0",
-  "description": "Backend API za VuMedi transkripte",
+  "description": "Backend API za VuMedi TPM transkripte",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
