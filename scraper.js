@@ -1,5 +1,7 @@
 // scraper.js
-const puppeteer = require("puppeteer");
+const puppeteer = require("puppeteer-core");
+const chromium = require("chromium");
+
 
 const VUMEDI_EMAIL = process.env.VUMEDI_EMAIL;
 const VUMEDI_PASSWORD = process.env.VUMEDI_PASSWORD;
