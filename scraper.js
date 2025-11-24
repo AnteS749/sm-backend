@@ -22,10 +22,18 @@ async function fetchTranscript(transcriptUrl) {
     throw new Error("Nedostaju VuMedi admin kredencijali u environmentu");
   }
 
-  const browser = await puppeteer.launch({
-    headless: "new",
-    args: ["--no-sandbox", "--disable-setuid-sandbox"]
-  });
+  const chromium = require("chromium");
+
+const browser = await puppeteer.launch({
+  executablePath: chromium.path,
+  headless: true,
+  args: [
+    "--no-sandbox",
+    "--disable-setuid-sandbox",
+    "--disable-dev-shm-usage"
+  ]
+});
+
 
   const page = await browser.newPage();
 
