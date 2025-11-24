@@ -1,10 +1,19 @@
-"dependencies": {
-  "chromium": "^3.0.2",
-  "puppeteer": "^23.0.0",
-  "express": "^4.19.0",
-  "dotenv": "^16.4.0",
-  "cors": "^2.8.5"
-}
+{
+  "name": "sm-backend",
+  "version": "1.0.0",
+  "description": "Backend API za VuMedi transkripte",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "chromium": "^3.0.2",
+    "puppeteer-core": "^23.0.0",
+    "express": "^4.19.0",
+    "dotenv": "^16.4.0",
+    "cors": "^2.8.5"
+  },
   "engines": {
     "node": ">=18"
   }
+}
